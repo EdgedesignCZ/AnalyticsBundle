@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Edge Analytics</title>
+    <style>
+        body {font-family: Helvetica Neue;margin: 1em;}
+    </style>
+    <script>
+        (function(i,d,t,a,u,g,s){i['EdgeAnalyticsObject']=a;i[a]=i[a]||function(){
+        (i[a].q=i[a].q||[]).push(arguments)};i[a].t=1*new Date();g=d.createElement(t);
+        g.src=u;s=d.getElementsByTagName(t)[0];s.parentNode.insertBefore(g,s);
+        }(window,document,'script','ea','//localhost:4000/analyticsminjs'));
+
+         // Custom collect route: string (defualt: '/collect')
+         // Warning: URL parmeter 'z' is dedicated fot Cache Busting Token
+        ea('_url','/collect?a=x');
+         // Send Cache Busting Token: true|1|'on' (default: true)
+        ea('_usecbt', 'on');
+        // Collect response length: int (defualt: 35 = lenght of ea.gif)
+        ea('_checksum','35');
+        // Custom key: value paremeter
+        ea('key', 'value');
+        // Custom key: array paremeter
+        ea('keyx', ['value1','values2','values3']);
+    </script>
+</head>
+<body>
+    <h1>Edge Analytics</h1>
+    <p>Mockup to develop/test GA like system.</p>
+    <ul>
+        <li>Run <code>npm install</code></li>
+        <li>Run <code>npm start</code></li>
+        <li>Open http://localhost:4000/</li>
+        <li>See this page network communication and source</li>
+    </ul>
+
+    <h2>Routes</h2>
+
+    <h3><a href="/"><code>GET /</code></a></h3>
+    <p>This page</p>
+
+    <h3><a href="/analyticsjs"><code>GET /analyticsjs</code></a></h3>
+    <p>Return ananlytics JS script</p>
+
+    <h3><code>POST /collect[?z=cbtoken]</code></h3>
+    <p>Accept measuring and sends back __utm.gif</p>
+</body>
+</html>
