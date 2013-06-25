@@ -13,7 +13,7 @@ var serialize = function(arr) {
   return str.join('&');
 };
 
-var ea = window[window.EdgeAnalyticsObject], params = ea.q, fparams=[],
+var ea = window[window['EdgeAnalyticsObject']], params = ea.q, fparams=[],
 method='POST',url='/collect',checksum=35,usecbt=true;
 
 for(i in params){
