@@ -13,9 +13,9 @@
         }(window,document,'script','ea','//localhost:4000/analyticsminjs'));
 
          // Custom collect route: string (defualt: '/collect')
-         // Warning: URL parmeter 'z' is dedicated fot Cache Bursting Token
+         // Warning: URL parmeter 'z' is dedicated fot Cache Busting Token
         ea('_url','/collect?a=x');
-         // Send Cache Bursting Token: true|1|'on' (default: true)
+         // Send Cache Busting Token: true|1|'on' (default: true)
         ea('_usecbt', 'on');
         // Collect response length: int (defualt: 35 = lenght of ea.gif)
         ea('_checksum','35');
