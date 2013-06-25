@@ -1,0 +1,14 @@
+{
+  "name": "vanillajs-analytics",
+  "version": "0.0.0",
+  "description": "Simple GA like ananlytics setup",
+  "main": "analytics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "express": "~3.2.6"
+  }
+}
