@@ -8,8 +8,13 @@
             "email": "vaclav.novotny@edgedesign.cz"
         }
     ],
-    "minimum-stability": "stable",
     "require": {
 
-    }
+    },
+    "autoload": {
+        "psr-0": {
+            "Edge\\Bundle\\AnalyticsBundle": ""
+        }
+    },
+    "minimum-stability": "stable"
 }
