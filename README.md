@@ -1,0 +1,1 @@
+Symfony2 bundle providing analytics measurement via JavaScript.
