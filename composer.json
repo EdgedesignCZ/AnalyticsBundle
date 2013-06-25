@@ -1,0 +1,15 @@
+{
+    "name": "edgedesign/analytics-bundle",
+    "description": "Symfony2 bundle providing analytics measurement via JavaScript.",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "VeN",
+            "email": "vaclav.novotny@edgedesign.cz"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+
+    }
+}
