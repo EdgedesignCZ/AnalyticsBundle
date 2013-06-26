@@ -6,3 +6,5 @@ edge_analytics_analyticsjs:
 edge_analytics_collect:
     pattern:  /analytics/collect
     defaults: { _controller: EdgeAnalyticsBundle:Analytics:collect }
+    requirements:
+      _method:  POST
