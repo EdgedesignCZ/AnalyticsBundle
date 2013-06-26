@@ -1,3 +1,8 @@
-edge_analytics_homepage:
-    pattern:  /analytics/js
-    defaults: { _controller: EdgeAnalyticsBundle:Default:js }
+edge_analytics_analyticsjs:
+    pattern:  /analytics/analyticsjs
+    defaults: { _controller: EdgeAnalyticsBundle:Analytics:analyticsjs }
+    requirements:
+      _method:  GET
+edge_analytics_collect:
+    pattern:  /analytics/collect
+    defaults: { _controller: EdgeAnalyticsBundle:Analytics:collect }
