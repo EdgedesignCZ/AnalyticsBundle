@@ -16,5 +16,6 @@
             "Edge\\Bundle\\AnalyticsBundle": ""
         }
     },
+    "target-dir": "Edge/Bundle/AnalyticsBundle",
     "minimum-stability": "stable"
 }
