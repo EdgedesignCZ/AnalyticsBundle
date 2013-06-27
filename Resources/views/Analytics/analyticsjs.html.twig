@@ -1,7 +1,0 @@
-{% javascripts '@EdgeAnalyticsBundle/Resources/public/analytics.min.js' %}
-    <script src="{{ asset_url }}"></script>
-{% endjavascripts %}
-
-<form class="form-inline" action="{{ path('edge_analytics_collect')}}" method="post">
-    <button class="button button-mini button-danger" type="submit" name="submit" title="{{ 'global.actions.delete'|trans }}"><i class="icon icon-trash"></i></button>
-</form>
