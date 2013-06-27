@@ -1,0 +1,10 @@
+edge_analytics_analyticsjs:
+    pattern:  /analyticsjs
+    defaults: { _controller: EdgeAnalyticsBundle:Analytics:analyticsjs }
+    requirements:
+      _method:  GET
+edge_analytics_collect:
+    pattern:  /collect
+    defaults: { _controller: EdgeAnalyticsBundle:Analytics:collect }
+    requirements:
+      _method:  POST

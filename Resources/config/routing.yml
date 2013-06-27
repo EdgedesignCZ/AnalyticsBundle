@@ -1,3 +1,3 @@
-edge_analytics_homepage:
-    pattern:  /analytics/js
-    defaults: { _controller: EdgeAnalyticsBundle:Default:js }
+edge_analytics:
+  resource: "@EdgeAnalyticsBundle/Resources/config/routing/analytics.yml"
+  prefix: /
