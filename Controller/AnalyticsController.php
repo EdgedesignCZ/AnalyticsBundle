@@ -2,6 +2,7 @@
 
 namespace Edge\Bundle\AnalyticsBundle\Controller;
 
+use Edge\Bundle\AnalyticsBundle\Collector\CollectorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
@@ -41,9 +42,11 @@ class AnalyticsController extends Controller
         $data = $request->request->all();
 
         $collector = $this->get($this->container->getParameter("collector"));
+        if (!$collector instanceof CollectorInterface) {
+            throw new \InvalidArgumentException('Collector must be instence of Edge\Bundle\AnalyticsBundle\Collector\CollectorInterface');
+        }
 
         if ($data) {
-            $collector = $this->get($this->container->getParameter("collector"));
             $collector->writeData($data);
         }
 
