@@ -1,10 +1,10 @@
 edge_analytics_analyticsjs:
-    pattern:  /analyticsjs
-    defaults: { _controller: EdgeAnalyticsBundle:Analytics:analyticsjs }
+    pattern:  /analytics/js
+    defaults: { _controller: EdgeAnalyticsBundle:Analytics:js }
     requirements:
       _method:  GET
 edge_analytics_collect:
-    pattern:  /collect
+    pattern:  /analytics/collect
     defaults: { _controller: EdgeAnalyticsBundle:Analytics:collect }
     requirements:
       _method:  POST

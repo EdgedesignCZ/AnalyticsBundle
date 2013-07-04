@@ -17,11 +17,11 @@ Place this code in HTML header:
         (function(i,d,t,a,u,g,s){i['EdgeAnalyticsObject']=a;i[a]=i[a]||function(){
         (i[a].q=i[a].q||[]).push(arguments)};i[a].t=1*new Date();g=d.createElement(t);
         g.src=u;s=d.getElementsByTagName(t)[0];s.parentNode.insertBefore(g,s);
-        }(window,document,'script','ea','/analyticsjs'));
+        }(window,document,'script','ea','/analytics/js'));
 
-         // Custom collect route: string (defualt: '/collect')
+         // Custom collect route: string (defualt: '/analytics/collect')
          // Warning: URL parmeter 'z' is dedicated fot Cache Busting Token
-        ea('_url','/collect?a=x');
+        ea('_url','/analytics/collect?a=x');
          // Send Cache Busting Token: true|1|'on' (default: true)
         ea('_usecbt', 'on');
         // Collect response length: int (defualt: 35 = lenght of ea.gif)

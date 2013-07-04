@@ -14,7 +14,7 @@ var serialize = function(arr) {
 };
 
 var ea = window[window['EdgeAnalyticsObject']], params = ea.q, fparams=[],
-method='POST',url='/collect',checksum=35,usecbt=true;
+method='POST',url='/analytics/collect',checksum=35,usecbt=true;
 
 for(i in params){
     var p=params[i],k=p[0],v=p[1];

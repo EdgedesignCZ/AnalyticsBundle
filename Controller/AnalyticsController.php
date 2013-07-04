@@ -20,7 +20,7 @@ class AnalyticsController extends Controller
      *
      * @return Response
      */
-    public function analyticsjsAction()
+    public function jsAction()
     {
         $path = __DIR__ . '/../' . 'Resources/public/analytics.min.js';
         $obsah = file_get_contents($path);
